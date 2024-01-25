@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>VIP Deluxe tantra</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../src/index.html">VIP Deluxe tantra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../src/index.html">Domu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../src/sluzby.html">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../src/produkty.html">Produkty</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="../src/kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mt-2 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <p class="navbar-text text-white">Přihlášen: </p>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-warning" href="../Lexa/settings.php">
+                            <?php echo $firstName . " " . $lastName ?>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="../Lexa/logout.php">Odhlásit se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="dates" class="p-5">
+        <div class="container">
+            <h2 class="text-center text-dark">Nabídka:</h2>
+            <br>
+            <div class="row g-4">
+                <!-- Loop starts here -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body text-center">
+                            <div id="card-top">
+                                <img src="./profilePictures/user1.jpg" class="rounded-circle" id="image" alt="">
+                                <h3 class="card-title"><span style="font-weight: 600;">John</span> <br> <span style="font-size: large;">Doe</span></h3>
+                            </div>
+                            <br>
+                            <h6 class="card-subtitle mb-2 text-muted">Věk: </h6>
+                            <p class="card-text">25</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Pohlaví: </h6>
+                            <p class="card-text">Male</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Sexualita: </h6>
+                            <p class="card-text">Heterosexual</p>
+                            <h6 class="card-subtitle mb-2 text-muted">O mně: </h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button type="button" class="btn btn-primary mr-2 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">Požádat o rande</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Loop ends here -->
+                
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
